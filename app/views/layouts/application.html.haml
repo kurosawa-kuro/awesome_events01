@@ -11,5 +11,8 @@
   %header.navbar.navbar-expand-sm.navbar-light.bg-light
     .container
       = link_to "AwesomeEvents", root_path, class: "navbar-brand"
+      %ul.navbar-navbar
+        %li.nav-item
+          = link_to "Gihub", "/auth/github", class: "nav-link",mehod: :post
     .container
       = yield
